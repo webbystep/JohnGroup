@@ -32,13 +32,53 @@
 }
   .sliced-button {
   clip-path: polygon(
-    0% 0%, 
-    100% 0%, 
-    100% 100%, 
-    10px 100%, 
+    0% 0%,
+    100% 0%,
+    100% 100%,
+    10px 100%,
     0% calc(100% - 10px)
   );
 }
+  .reference-bento {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 220px;
+    gap: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .reference-bento-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    background: #0b2a3a;
+  }
+  .reference-bento-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+  .reference-bento-item:hover img {
+    transform: scale(1.05);
+  }
+  .reference-bento-item.large {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  @media (max-width: 767px) {
+    .reference-bento {
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 180px;
+      gap: 12px;
+    }
+    .reference-bento-item.large {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+  }
 </style>
 </head>
 <body>
@@ -147,42 +187,15 @@
         </div>
       </div>
     </section>
-    <header data-w-id="df7cf82f-6dea-2e0f-5250-c7f98c8c0608" class="section_header78">
-      <div class="header78_component">
-        <div class="header78_content-bottom">
-          <div class="header78_images-layout">
-            <div class="header78_image-list-top">
-              <div id="w-node-df7cf82f-6dea-2e0f-5250-c7f98c8c060d-43639725" class="header78_image-list">
-                <div id="w-node-f4a8d23e-d89a-04cd-6767-dc5208a9b239-43639725" class="header78_image-wrapper"><img id="w-node-f4a8d23e-d89a-04cd-6767-dc5208a9b23a-43639725" loading="lazy" alt="" src="https://cdn.prod.website-files.com/67ebba63f6dce69a0210b892/67ebba63f6dce69a0210ba0c_6191a88a1c0e39463c2bf022_placeholder-image.svg" class="header78_image"></div>
-                <div id="w-node-_25931026-da74-228f-ab78-7afdaa9e972c-43639725" class="header78_image-wrapper"><img id="w-node-_25931026-da74-228f-ab78-7afdaa9e972d-43639725" loading="lazy" alt="" src="https://cdn.prod.website-files.com/67ebba63f6dce69a0210b892/67ebba63f6dce69a0210ba0c_6191a88a1c0e39463c2bf022_placeholder-image.svg" class="header78_image"></div>
-                <div id="w-node-_0887a19c-4117-3efc-b9f6-ec46c02abf2a-43639725" class="header78_image-wrapper"><img id="w-node-_0887a19c-4117-3efc-b9f6-ec46c02abf2b-43639725" loading="lazy" alt="" src="https://cdn.prod.website-files.com/67ebba63f6dce69a0210b892/67ebba63f6dce69a0210ba0c_6191a88a1c0e39463c2bf022_placeholder-image.svg" class="header78_image"></div>
-                <div id="w-node-_5c6610ab-7142-75f1-8fce-a6d9312a090f-43639725" class="header78_image-wrapper"><img id="w-node-_5c6610ab-7142-75f1-8fce-a6d9312a0910-43639725" loading="lazy" alt="" src="https://cdn.prod.website-files.com/67ebba63f6dce69a0210b892/67ebba63f6dce69a0210ba0c_6191a88a1c0e39463c2bf022_placeholder-image.svg" class="header78_image"></div>
-                <div id="w-node-_105bfd05-169f-674c-d0b2-506e6921f71f-43639725" class="header78_image-wrapper"><img id="w-node-_105bfd05-169f-674c-d0b2-506e6921f720-43639725" loading="lazy" alt="" src="https://cdn.prod.website-files.com/67ebba63f6dce69a0210b892/67ebba63f6dce69a0210ba0c_6191a88a1c0e39463c2bf022_placeholder-image.svg" class="header78_image"></div>
-                <div id="w-node-bfa0c1e6-56fc-2042-dc4c-b70ad07afee2-43639725" class="header78_image-wrapper"><img id="w-node-bfa0c1e6-56fc-2042-dc4c-b70ad07afee3-43639725" loading="lazy" alt="" src="https://cdn.prod.website-files.com/67ebba63f6dce69a0210b892/67ebba63f6dce69a0210ba0c_6191a88a1c0e39463c2bf022_placeholder-image.svg" class="header78_image"></div>
-                <div id="w-node-f85ff112-a69a-e941-aced-7d71c24270e9-43639725" class="header78_image-wrapper"><img id="w-node-f85ff112-a69a-e941-aced-7d71c24270ea-43639725" loading="lazy" alt="" src="https://cdn.prod.website-files.com/67ebba63f6dce69a0210b892/67ebba63f6dce69a0210ba0c_6191a88a1c0e39463c2bf022_placeholder-image.svg" class="header78_image"></div>
-                <div id="w-node-_34dea747-f4c8-f672-40b0-eb91796265f1-43639725" class="header78_image-wrapper"><img id="w-node-_34dea747-f4c8-f672-40b0-eb91796265f2-43639725" loading="lazy" alt="" src="https://cdn.prod.website-files.com/67ebba63f6dce69a0210b892/67ebba63f6dce69a0210ba0c_6191a88a1c0e39463c2bf022_placeholder-image.svg" class="header78_image"></div>
-                <div id="w-node-_9005ed83-993f-fe93-cff2-3b3058dc6ac5-43639725" class="header78_image-wrapper"><img id="w-node-_9005ed83-993f-fe93-cff2-3b3058dc6ac6-43639725" loading="lazy" alt="" src="https://cdn.prod.website-files.com/67ebba63f6dce69a0210b892/67ebba63f6dce69a0210ba0c_6191a88a1c0e39463c2bf022_placeholder-image.svg" class="header78_image"></div>
-                <div id="w-node-_6e5e3811-6bc5-b204-34df-b0c42479fb2d-43639725" class="header78_image-wrapper"><img id="w-node-_6e5e3811-6bc5-b204-34df-b0c42479fb2e-43639725" loading="lazy" alt="" src="https://cdn.prod.website-files.com/67ebba63f6dce69a0210b892/67ebba63f6dce69a0210ba0c_6191a88a1c0e39463c2bf022_placeholder-image.svg" class="header78_image"></div>
-              </div>
-            </div>
-            <div class="header78_image-list-bottom">
-              <div id="w-node-df7cf82f-6dea-2e0f-5250-c7f98c8c0615-43639725" class="header78_image-list">
-                <div id="w-node-_42a140a9-e813-7df6-2444-6f55b14f57c5-43639725" class="header78_image-wrapper"><img id="w-node-_42a140a9-e813-7df6-2444-6f55b14f57c6-43639725" loading="lazy" alt="" src="https://cdn.prod.website-files.com/67ebba63f6dce69a0210b892/67ebba63f6dce69a0210ba0c_6191a88a1c0e39463c2bf022_placeholder-image.svg" class="header78_image"></div>
-                <div id="w-node-_2c637bb4-945c-039f-6933-7a0b81e27376-43639725" class="header78_image-wrapper"><img id="w-node-_2c637bb4-945c-039f-6933-7a0b81e27377-43639725" loading="lazy" alt="" src="https://cdn.prod.website-files.com/67ebba63f6dce69a0210b892/67ebba63f6dce69a0210ba0c_6191a88a1c0e39463c2bf022_placeholder-image.svg" class="header78_image"></div>
-                <div id="w-node-_0a4530a6-df5d-f585-9f38-568659558660-43639725" class="header78_image-wrapper"><img id="w-node-_0a4530a6-df5d-f585-9f38-568659558661-43639725" loading="lazy" alt="" src="https://cdn.prod.website-files.com/67ebba63f6dce69a0210b892/67ebba63f6dce69a0210ba0c_6191a88a1c0e39463c2bf022_placeholder-image.svg" class="header78_image"></div>
-                <div id="w-node-aa0f721c-c81f-5c31-28d0-5b4e432c28e3-43639725" class="header78_image-wrapper"><img id="w-node-aa0f721c-c81f-5c31-28d0-5b4e432c28e4-43639725" loading="lazy" alt="" src="https://cdn.prod.website-files.com/67ebba63f6dce69a0210b892/67ebba63f6dce69a0210ba0c_6191a88a1c0e39463c2bf022_placeholder-image.svg" class="header78_image"></div>
-                <div id="w-node-ad77a6f5-6de7-1c4d-94ad-8cba470bdbda-43639725" class="header78_image-wrapper"><img id="w-node-ad77a6f5-6de7-1c4d-94ad-8cba470bdbdb-43639725" loading="lazy" alt="" src="https://cdn.prod.website-files.com/67ebba63f6dce69a0210b892/67ebba63f6dce69a0210ba0c_6191a88a1c0e39463c2bf022_placeholder-image.svg" class="header78_image"></div>
-                <div id="w-node-ccac8cf4-a6ac-391b-abc7-fd43e3ea0dba-43639725" class="header78_image-wrapper"><img id="w-node-ccac8cf4-a6ac-391b-abc7-fd43e3ea0dbb-43639725" loading="lazy" alt="" src="https://cdn.prod.website-files.com/67ebba63f6dce69a0210b892/67ebba63f6dce69a0210ba0c_6191a88a1c0e39463c2bf022_placeholder-image.svg" class="header78_image"></div>
-                <div id="w-node-e587e706-7260-cc55-735a-3bc760f86353-43639725" class="header78_image-wrapper"><img id="w-node-e587e706-7260-cc55-735a-3bc760f86354-43639725" loading="lazy" alt="" src="https://cdn.prod.website-files.com/67ebba63f6dce69a0210b892/67ebba63f6dce69a0210ba0c_6191a88a1c0e39463c2bf022_placeholder-image.svg" class="header78_image"></div>
-                <div id="w-node-_25852849-65b7-4dd4-4aae-472c30153eee-43639725" class="header78_image-wrapper"><img id="w-node-_25852849-65b7-4dd4-4aae-472c30153eef-43639725" loading="lazy" alt="" src="https://cdn.prod.website-files.com/67ebba63f6dce69a0210b892/67ebba63f6dce69a0210ba0c_6191a88a1c0e39463c2bf022_placeholder-image.svg" class="header78_image"></div>
-                <div id="w-node-fb31ecb9-be27-8561-75ac-1ce7536ecc44-43639725" class="header78_image-wrapper"><img id="w-node-fb31ecb9-be27-8561-75ac-1ce7536ecc45-43639725" loading="lazy" alt="" src="https://cdn.prod.website-files.com/67ebba63f6dce69a0210b892/67ebba63f6dce69a0210ba0c_6191a88a1c0e39463c2bf022_placeholder-image.svg" class="header78_image"></div>
-                <div id="w-node-ef290365-32fb-509b-2514-b613604f5a2b-43639725" class="header78_image-wrapper"><img id="w-node-ef290365-32fb-509b-2514-b613604f5a2c-43639725" loading="lazy" alt="" src="https://cdn.prod.website-files.com/67ebba63f6dce69a0210b892/67ebba63f6dce69a0210ba0c_6191a88a1c0e39463c2bf022_placeholder-image.svg" class="header78_image"></div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <section class="service-section">
+      <div class="reference-bento">
+        <div class="reference-bento-item large"><img src="images/referencia-1.jpg" loading="lazy" alt="CNC megmunkált referencia alkatrész"></div>
+        <div class="reference-bento-item"><img src="images/referencia-2.jpg" loading="lazy" alt="CNC megmunkált referencia alkatrész"></div>
+        <div class="reference-bento-item"><img src="images/referencia-3.jpg" loading="lazy" alt="CNC megmunkált referencia alkatrész"></div>
+        <div class="reference-bento-item"><img src="images/referencia-4.jpg" loading="lazy" alt="CNC megmunkált referencia alkatrész"></div>
+        <div class="reference-bento-item"><img src="images/referencia-5.jpg" loading="lazy" alt="CNC megmunkált referencia alkatrész"></div>
       </div>
-    </header>
+    </section>
     <section class="background-video-section">
       <div data-poster-url="videos/5217799_Lathe_Cnc_1280x720_poster.0000000.jpg" data-video-urls="videos/5217799_Lathe_Cnc_1280x720_mp4.mp4,videos/5217799_Lathe_Cnc_1280x720_webm.webm" data-autoplay="true" data-loop="true" data-wf-ignore="true" data-w-id="c291018a-df91-d7f1-187e-03fe6644aa3e" style="opacity:0" class="background-video w-background-video w-background-video-atom"><video id="c291018a-df91-d7f1-187e-03fe6644aa3e-video" autoplay="" loop="" style="background-image:url(&quot;videos/5217799_Lathe_Cnc_1280x720_poster.0000000.jpg&quot;)" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
           <source src="videos/5217799_Lathe_Cnc_1280x720_mp4.mp4" data-wf-ignore="true">

@@ -83,16 +83,27 @@
   @media (max-width: 991px) { .legal-page { padding-top: 60px; padding-bottom: 60px; } }
   @media (max-width: 767px) { .legal-hero { padding: 140px 0 60px; } .legal-hero h1 { font-size: 30px; } .legal-page { padding-top: 40px; padding-bottom: 40px; } .legal-page .privacy-wrap { padding: 30px; } }
 
-  .lang-switcher { display: inline-flex; align-items: center; gap: 8px; margin-left: 14px; }
-  .lang-flag { display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 18px; overflow: hidden; opacity: 0.55; transition: opacity 0.2s, transform 0.2s; border: 1px solid rgba(255,255,255,0.12); }
-  .lang-flag svg { width: 100%; height: 100%; display: block; }
-  .lang-flag:hover { opacity: 0.9; transform: translateY(-1px); }
-  .lang-flag.active { opacity: 1; border-color: #fff; box-shadow: 0 0 0 1px #fff; }
+  .lang-switcher { position: relative; display: inline-flex; align-items: stretch; margin-left: 10px; font-family: inherit; }
+  .lang-switcher-btn { display: inline-flex; align-items: center; gap: 8px; padding: 0 14px; height: 45px; background: rgba(255,255,255,0.06); color: #fff; border: 1px solid rgba(255,255,255,0.18); cursor: pointer; font-family: inherit; font-size: 14px; font-weight: 500; transition: background 0.2s, border-color 0.2s; }
+  .lang-switcher-btn:hover { background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.3); }
+  .lang-switcher-btn .lang-flag { display: inline-flex; width: 20px; height: 14px; overflow: hidden; border: 1px solid rgba(255,255,255,0.25); flex-shrink: 0; }
+  .lang-switcher-btn .lang-flag svg { width: 100%; height: 100%; display: block; }
+  .lang-switcher-btn .lang-code { font-weight: 500; letter-spacing: 0.02em; }
+  .lang-chevron { transition: transform 0.2s; opacity: 0.7; }
+  .lang-switcher[data-open="true"] .lang-chevron { transform: rotate(180deg); }
+  .lang-switcher-menu { position: absolute; top: calc(100% + 6px); right: 0; min-width: 100%; background: #162734; border: 1px solid rgba(255,255,255,0.18); padding: 4px 0; margin: 0; list-style: none; display: none; z-index: 120; box-shadow: 0 8px 24px rgba(0,0,0,0.25); }
+  .lang-switcher[data-open="true"] .lang-switcher-menu { display: block; }
+  .lang-switcher-menu a.lang-option { display: flex; align-items: center; gap: 8px; padding: 10px 14px; color: rgba(255,255,255,0.75); text-decoration: none; font-size: 14px; font-weight: 500; transition: background 0.15s, color 0.15s; }
+  .lang-switcher-menu a.lang-option:hover { background: rgba(255,255,255,0.08); color: #fff; }
+  .lang-switcher-menu .lang-flag { display: inline-flex; width: 20px; height: 14px; overflow: hidden; border: 1px solid rgba(255,255,255,0.25); flex-shrink: 0; }
+  .lang-switcher-menu .lang-flag svg { width: 100%; height: 100%; display: block; }
   @media (max-width: 767px) {
-    .lang-switcher { gap: 6px; margin-left: 10px; }
-    .lang-flag { width: 22px; height: 15px; }
+    .lang-switcher { margin-left: 8px; }
+    .lang-switcher-btn { height: 41px; padding: 0 10px; font-size: 13px; gap: 6px; }
+    .lang-switcher-btn .lang-flag, .lang-switcher-menu .lang-flag { width: 18px; height: 13px; }
+    .lang-chevron { width: 11px; height: 11px; }
   }
-/*jg-lang-flag-css*/
+/*jg-lang-dropdown-v2*/
 </style>
 </head>
 <body>
@@ -104,7 +115,7 @@
           <div id="w-node-dfa2e72a-ed5d-887d-c48a-f3aba13c7f98-a13c7f93" class="nav-menu-wrap">
             
             <div class="button-left">
-              <a href="index.html" class="button-white sliced-button w-button">Back to homepage</a><nav class="lang-switcher" aria-label="Language"><a href="../impresszum" class="lang-flag" lang="hu" aria-label="Magyar" title="Magyar"><svg viewBox="0 0 18 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="18" height="4" fill="#CE2939"/><rect y="4" width="18" height="4" fill="#FFFFFF"/><rect y="8" width="18" height="4" fill="#477050"/></svg></a><a href="imprint" class="lang-flag active" lang="en" aria-label="English" title="English" aria-current="true"><svg viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><clipPath id="jguk-t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#jguk-t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg></a><a href="../de/impressum" class="lang-flag" lang="de" aria-label="Deutsch" title="Deutsch"><svg viewBox="0 0 18 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="18" height="4" fill="#000000"/><rect y="4" width="18" height="4" fill="#DD0000"/><rect y="8" width="18" height="4" fill="#FFCE00"/></svg></a></nav>
+              <a href="index.html" class="button-white sliced-button w-button">Back to homepage</a><div class="lang-switcher" data-open="false"><button class="lang-switcher-btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Language"><span class="lang-flag"><svg viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><clipPath id="jguk-t"><path d="M30,15 h30 v15 z v-15 h-30 z h-30 v-15 z v15 h30 z"/></clipPath><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#jguk-t)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg></span><span class="lang-code">EN</span><svg class="lang-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button><ul class="lang-switcher-menu" role="menu"><li role="none"><a href="../impresszum" class="lang-option" role="menuitem" lang="hu"><span class="lang-flag"><svg viewBox="0 0 18 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="18" height="4" fill="#CE2939"/><rect y="4" width="18" height="4" fill="#FFFFFF"/><rect y="8" width="18" height="4" fill="#477050"/></svg></span><span class="lang-code">HU</span></a></li><li role="none"><a href="../de/impressum" class="lang-option" role="menuitem" lang="de"><span class="lang-flag"><svg viewBox="0 0 18 12" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="18" height="4" fill="#000000"/><rect y="4" width="18" height="4" fill="#DD0000"/><rect y="8" width="18" height="4" fill="#FFCE00"/></svg></span><span class="lang-code">DE</span></a></li></ul></div>
             </div>
           </div>
         </div>
@@ -209,6 +220,7 @@
   <script src="../js/webflow.js" type="text/javascript"></script>
   <script src="/js/quote-form.js" defer></script>
   <script src="/js/lang-suggest.js" defer></script>
+  <script src="/js/lang-switcher.js" defer></script>
   <script src="/js/cookie-banner.js" defer></script>
 </body>
 </html>

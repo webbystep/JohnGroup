@@ -1,0 +1,10 @@
+{
+  "name": "johngroup-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "John Group static site with Vercel serverless API for contact form.",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  }
+}

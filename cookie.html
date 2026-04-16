@@ -9,6 +9,10 @@
   <meta property="og:type" content="website">
   <meta content="summary_large_image" name="twitter:card">
   <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link rel="alternate" hreflang="hu" href="/cookie.html">
+  <link rel="alternate" hreflang="en" href="/en/cookie-policy.html">
+  <link rel="alternate" hreflang="de" href="/de/cookie-richtlinie.html">
+  <link rel="alternate" hreflang="x-default" href="/cookie.html">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
   <link href="css/john-group.webflow.css" rel="stylesheet" type="text/css">
@@ -72,6 +76,27 @@
   }
   .btn-back-home:hover { background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.6); }
   .nav-buttons { display: flex; gap: 12px; align-items: center; }
+  .lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 20px;
+  }
+  .lang-switcher a {
+    color: rgba(255, 255, 255, 0.55);
+    text-decoration: none;
+    padding: 4px 8px;
+    transition: color 0.2s;
+  }
+  .lang-switcher a:hover { color: #fff; }
+  .lang-switcher a.active { color: #fff; font-weight: 600; }
+  .lang-switcher .sep { color: rgba(255, 255, 255, 0.25); }
+  @media (max-width: 767px) {
+    .lang-switcher { font-size: 13px; margin-right: 12px; }
+    .lang-switcher a { padding: 4px 4px; }
+  }
   .legal-page { background-color: #f2f5fb; padding-top: 80px; padding-bottom: 80px; }
   .legal-page .container-medium {
     max-width: 100%;
@@ -123,6 +148,13 @@
         <div class="w-layout-grid grid-nav">
           <a href="index.html" id="w-node-dfa2e72a-ed5d-887d-c48a-f3aba13c7f96-a13c7f93" class="brand w-nav-brand"><img src="images/john_group_white_logo.svg" loading="lazy" alt="" class="logo"></a>
           <div id="w-node-dfa2e72a-ed5d-887d-c48a-f3aba13c7f98-a13c7f93" class="nav-menu-wrap">
+            <nav class="lang-switcher" aria-label="Nyelvválasztó">
+              <a href="cookie.html" class="active" lang="hu">HU</a>
+              <span class="sep">|</span>
+              <a href="en/cookie-policy.html" lang="en">EN</a>
+              <span class="sep">|</span>
+              <a href="de/cookie-richtlinie.html" lang="de">DE</a>
+            </nav>
             <div class="button-left">
               <a href="index.html" class="button-white sliced-button w-button">Vissza a kezdőlapra</a>
             </div>

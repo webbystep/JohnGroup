@@ -11,12 +11,25 @@
     de: { text: 'Angebot anfordern', href: '/de/#angebot' },
   };
 
+  var LABELS_BACK = {
+    hu: { text: 'Vissza a kezdőlapra', href: '/' },
+    en: { text: 'Back to homepage', href: '/en/' },
+    de: { text: 'Zurück zur Startseite', href: '/de/' },
+  };
+
   function isMobile() {
     return window.innerWidth <= MOBILE_BREAKPOINT;
   }
 
   function getLang() {
     return (document.documentElement.lang || 'hu').toLowerCase().slice(0, 2);
+  }
+
+  function isLegalPage() {
+    // Legal pages don't contain the quote form anchor; show back-home CTA instead
+    return !document.querySelector(
+      '#ajanlatkeres, #request-quote, #angebot, .cta-section'
+    );
   }
 
   function injectStyles() {
@@ -37,7 +50,8 @@
   function render() {
     injectStyles();
     var lang = getLang();
-    var t = LABELS[lang] || LABELS.hu;
+    var source = isLegalPage() ? LABELS_BACK : LABELS;
+    var t = source[lang] || source.hu;
 
     var wrap = document.createElement('div');
     wrap.className = 'jg-sticky-cta-wrap';
@@ -45,6 +59,7 @@
     wrap.innerHTML = '<a href="' + t.href + '"><span>' + t.text + '</span></a>';
     document.body.appendChild(wrap);
 
+    var legalPage = isLegalPage();
     function update() {
       if (!isMobile()) {
         wrap.classList.remove('show');
@@ -52,7 +67,9 @@
         return;
       }
       var y = window.scrollY || window.pageYOffset || 0;
-      var nearBottom = window.innerHeight + y >= document.body.scrollHeight - 300;
+      // On index pages, hide near bottom to avoid doubling with actual form.
+      // On legal pages, keep visible so back-home CTA is always reachable.
+      var nearBottom = !legalPage && window.innerHeight + y >= document.body.scrollHeight - 300;
       if (y > SHOW_AFTER_SCROLL && !nearBottom) {
         if (!wrap.classList.contains('show')) {
           wrap.classList.add('show');

@@ -116,6 +116,7 @@
       banner.classList.remove('jg-cb-show');
       setTimeout(function () {
         if (banner.parentNode) banner.parentNode.removeChild(banner);
+        try { window.dispatchEvent(new CustomEvent('jg-cookie-dismissed')); } catch (e) {}
       }, 300);
     }
 

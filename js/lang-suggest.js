@@ -77,7 +77,7 @@
     var style = document.createElement('style');
     style.id = 'jg-lang-suggest-styles';
     style.textContent =
-      '.jg-lang-suggest{position:fixed;left:20px;right:20px;top:20px;max-width:420px;margin:0 auto;background:#162734;color:#fff;padding:12px 14px 12px 16px;z-index:9998;box-shadow:0 12px 32px rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.08);font-family:Inter,system-ui,sans-serif;display:flex;gap:10px;align-items:center;opacity:0;transform:translateY(-12px);transition:opacity .25s ease,transform .25s ease}' +
+      '.jg-lang-suggest{position:fixed;left:20px;right:auto;bottom:20px;max-width:420px;background:#162734;color:#fff;padding:12px 14px 12px 16px;z-index:9998;box-shadow:0 12px 32px rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.08);font-family:Inter,system-ui,sans-serif;display:flex;gap:10px;align-items:center;opacity:0;transform:translateY(16px);transition:opacity .25s ease,transform .25s ease}' +
       '.jg-lang-suggest.show{opacity:1;transform:translateY(0)}' +
       '.jg-lang-suggest svg{flex-shrink:0;width:18px;height:18px;color:rgba(255,255,255,.75)}' +
       '.jg-lang-suggest-text{flex:1;font-size:13px;line-height:1.45;color:rgba(255,255,255,.85)}' +
@@ -86,7 +86,7 @@
       '.jg-lang-suggest-close{background:transparent;border:0;color:rgba(255,255,255,.5);cursor:pointer;padding:6px;display:flex;align-items:center;transition:color .2s}' +
       '.jg-lang-suggest-close:hover{color:#fff}' +
       '.jg-lang-suggest-close svg{width:14px;height:14px;color:inherit}' +
-      '@media (max-width: 480px){.jg-lang-suggest{top:12px;left:12px;right:12px;padding:10px 10px 10px 14px;gap:8px}.jg-lang-suggest-text{font-size:12.5px}.jg-lang-suggest-action{font-size:12.5px;padding:7px 12px}}';
+      '@media (max-width: 640px){.jg-lang-suggest{left:12px;right:12px;bottom:12px;max-width:none;padding:10px 10px 10px 14px;gap:8px}.jg-lang-suggest-text{font-size:12.5px}.jg-lang-suggest-action{font-size:12.5px;padding:7px 12px}}';
     document.head.appendChild(style);
   }
 
@@ -146,6 +146,14 @@
     });
   }
 
+  function hasCookieConsent() {
+    try {
+      return !!localStorage.getItem('jg-cookie-consent-v1');
+    } catch (e) {
+      return true;
+    }
+  }
+
   function init() {
     if (isDismissed()) return;
 
@@ -157,6 +165,16 @@
 
     var targetHref = getTargetPath(currentLang, browserLang);
     if (!targetHref) return;
+
+    // If cookie banner is still visible, wait until it's dismissed
+    if (!hasCookieConsent()) {
+      window.addEventListener('jg-cookie-dismissed', function () {
+        setTimeout(function () {
+          render(currentLang, browserLang, targetHref);
+        }, 400);
+      }, { once: true });
+      return;
+    }
 
     render(currentLang, browserLang, targetHref);
   }

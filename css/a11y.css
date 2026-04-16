@@ -1,0 +1,51 @@
+/* Mobile: disable Webflow IX2 (scroll animations) to avoid jank on low-end devices.
+   Webflow sets data-w-id + inline opacity:0 or transform on animated elements,
+   then animates them via webflow.js on scroll. On mobile this is noticeably laggy.
+   We keep our own animations (cookie banner, sticky CTA) — those use our own
+   classes, not data-w-id. */
+
+@media (max-width: 767px) {
+  [data-w-id][style*="opacity:0"],
+  [data-w-id][style*="opacity: 0"],
+  [data-w-id][style*="opacity:"] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  [data-w-id] {
+    transition: none !important;
+    animation: none !important;
+  }
+
+  /* Neutralize the subtle hero-section decorative transforms */
+  .hero-title-wrap,
+  .hero-description,
+  .grid-about,
+  .section-title,
+  .grid-cta-item,
+  .footer-wrap {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  /* Disable the smooth scale on bento reference hover (no hover on mobile anyway) */
+  .reference-bento-item:hover img {
+    transform: none !important;
+  }
+  .reference-bento-item img {
+    transition: none !important;
+  }
+}
+
+/* Respect the OS-level reduced-motion preference on every viewport */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

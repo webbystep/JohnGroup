@@ -39,44 +39,72 @@
   .legal-hero .container-full { position: relative; z-index: 2; }
   .legal-hero h1 {
     color: #fff;
-    font-size: 56px;
+    font-size: 40px;
     font-weight: 500;
     margin: 0;
-    text-align: center;
+    text-align: left;
     letter-spacing: -0.01em;
   }
-  .legal-hero-decoration {
-    position: absolute;
-    right: 4%;
-    bottom: -10px;
-    height: 80px;
-    opacity: 0.35;
-    z-index: 1;
+  .legal-breadcrumb {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.65);
+    margin-bottom: 16px;
+    font-weight: 400;
+    text-align: left;
   }
-  .legal-page { background-color: #f2f5fb; }
+  .legal-breadcrumb a { color: rgba(255, 255, 255, 0.65); text-decoration: none; transition: color 0.2s; }
+  .legal-breadcrumb a:hover { color: #fff; }
+  .legal-breadcrumb .sep { margin: 0 8px; opacity: 0.5; }
+  .legal-breadcrumb .current { color: #fff; }
+  .btn-back-home {
+    color: #fff;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s, border-color 0.2s;
+  }
+  .btn-back-home:hover { background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.6); }
+  .nav-buttons { display: flex; gap: 12px; align-items: center; }
+  .legal-page { background-color: #f2f5fb; padding-top: 80px; padding-bottom: 80px; }
   .legal-page .privacy-wrap {
     background-color: #fff;
     padding: 60px;
-    border-radius: 4px;
-    box-shadow: 0 4px 24px rgba(22, 39, 52, 0.06);
   }
   .legal-page .rich-text h5 {
-    color: #162734;
-    font-size: 22px;
+    color: #1f3444;
+    font-size: 25px;
     font-weight: 600;
     margin-top: 40px;
     margin-bottom: 16px;
   }
   .legal-page .rich-text h5:first-child { margin-top: 0; }
+  .legal-page .rich-text h6 {
+    color: #1f3444;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 12px;
+  }
   .legal-page .rich-text p,
   .legal-page .rich-text ul,
-  .legal-page .rich-text ol { margin-bottom: 20px; color: #334155; font-size: 17px; line-height: 1.65; }
+  .legal-page .rich-text ol,
+  .legal-page .rich-text li { margin-bottom: 20px; color: #566375; font-size: 15px; line-height: 1.65; }
+  .legal-page .rich-text li { margin-bottom: 8px; }
   .legal-page .rich-text a { color: #00ace8; text-decoration: underline; text-underline-offset: 3px; }
-  .legal-page .rich-text strong { color: #162734; }
+  .legal-page .rich-text strong { color: #1f3444; font-weight: 600; }
+  @media (max-width: 991px) { .legal-page { padding-top: 60px; padding-bottom: 60px; } }
   @media (max-width: 767px) {
     .legal-hero { padding: 140px 0 60px; }
-    .legal-hero h1 { font-size: 36px; }
+    .legal-hero h1 { font-size: 32px; }
+    .legal-page { padding-top: 40px; padding-bottom: 40px; }
     .legal-page .privacy-wrap { padding: 30px; }
+    .nav-buttons .btn-back-home { display: none; }
   }
   </style>
 </head>
@@ -87,7 +115,8 @@
         <div class="w-layout-grid grid-nav">
           <a href="index.html" class="brand w-nav-brand"><img src="images/john_group_white_logo.svg" loading="lazy" alt="" class="logo"></a>
           <div class="nav-menu-wrap">
-            <div class="button-left">
+            <div class="button-left nav-buttons">
+              <a href="index.html" class="btn-back-home">← Vissza kezdőlapra</a>
               <a href="index.html#ajanlatkeres" class="button-white sliced-button w-button">Ajánlatkérés</a>
             </div>
           </div>
@@ -96,11 +125,13 @@
     </div>
     <section class="legal-hero">
       <div class="container-full w-container">
+        <nav class="legal-breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Kezdőlap</a><span class="sep">/</span><span class="current">Cookie nyilatkozat</span>
+        </nav>
         <h1>Cookie nyilatkozat</h1>
       </div>
-      <img src="images/vector-03.svg" loading="eager" alt="" class="legal-hero-decoration">
     </section>
-    <div class="privacy-section section-spacing-sm-top section-spacing-bottom legal-page">
+    <div class="privacy-section legal-page">
       <div class="container-medium w-container">
         <div class="privacy-wrap">
           <div class="rich-text w-richtext">

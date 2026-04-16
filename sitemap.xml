@@ -36,39 +36,6 @@
   </url>
 
   <url>
-    <loc>https://johngroup.vercel.app/kepessegek</loc>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://johngroup.vercel.app/kepessegek"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://johngroup.vercel.app/en/capabilities"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://johngroup.vercel.app/de/fertigung"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://johngroup.vercel.app/kepessegek"/>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://johngroup.vercel.app/en/capabilities</loc>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://johngroup.vercel.app/kepessegek"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://johngroup.vercel.app/en/capabilities"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://johngroup.vercel.app/de/fertigung"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://johngroup.vercel.app/kepessegek"/>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://johngroup.vercel.app/de/fertigung</loc>
-    <xhtml:link rel="alternate" hreflang="hu" href="https://johngroup.vercel.app/kepessegek"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://johngroup.vercel.app/en/capabilities"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://johngroup.vercel.app/de/fertigung"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://johngroup.vercel.app/kepessegek"/>
-    <lastmod>2026-04-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://johngroup.vercel.app/impresszum</loc>
     <xhtml:link rel="alternate" hreflang="hu" href="https://johngroup.vercel.app/impresszum"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://johngroup.vercel.app/en/imprint"/>

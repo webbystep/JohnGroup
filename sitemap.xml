@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://johngroup.vercel.app/</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://johngroup.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://johngroup.vercel.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://johngroup.vercel.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://johngroup.vercel.app/"/>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://johngroup.vercel.app/en/</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://johngroup.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://johngroup.vercel.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://johngroup.vercel.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://johngroup.vercel.app/"/>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://johngroup.vercel.app/de/</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://johngroup.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://johngroup.vercel.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://johngroup.vercel.app/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://johngroup.vercel.app/"/>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://johngroup.vercel.app/kepessegek</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://johngroup.vercel.app/kepessegek"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://johngroup.vercel.app/en/capabilities"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://johngroup.vercel.app/de/fertigung"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://johngroup.vercel.app/kepessegek"/>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://johngroup.vercel.app/en/capabilities</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://johngroup.vercel.app/kepessegek"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://johngroup.vercel.app/en/capabilities"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://johngroup.vercel.app/de/fertigung"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://johngroup.vercel.app/kepessegek"/>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://johngroup.vercel.app/de/fertigung</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://johngroup.vercel.app/kepessegek"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://johngroup.vercel.app/en/capabilities"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://johngroup.vercel.app/de/fertigung"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://johngroup.vercel.app/kepessegek"/>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://johngroup.vercel.app/impresszum</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://johngroup.vercel.app/impresszum"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://johngroup.vercel.app/en/imprint"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://johngroup.vercel.app/de/impressum"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://johngroup.vercel.app/impresszum"/>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://johngroup.vercel.app/en/imprint</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://johngroup.vercel.app/impresszum"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://johngroup.vercel.app/en/imprint"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://johngroup.vercel.app/de/impressum"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://johngroup.vercel.app/impresszum"/>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://johngroup.vercel.app/de/impressum</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://johngroup.vercel.app/impresszum"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://johngroup.vercel.app/en/imprint"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://johngroup.vercel.app/de/impressum"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://johngroup.vercel.app/impresszum"/>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://johngroup.vercel.app/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://johngroup.vercel.app/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://johngroup.vercel.app/en/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://johngroup.vercel.app/de/datenschutz"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://johngroup.vercel.app/privacy-policy"/>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://johngroup.vercel.app/en/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://johngroup.vercel.app/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://johngroup.vercel.app/en/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://johngroup.vercel.app/de/datenschutz"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://johngroup.vercel.app/privacy-policy"/>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://johngroup.vercel.app/de/datenschutz</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://johngroup.vercel.app/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://johngroup.vercel.app/en/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://johngroup.vercel.app/de/datenschutz"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://johngroup.vercel.app/privacy-policy"/>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://johngroup.vercel.app/cookie</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://johngroup.vercel.app/cookie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://johngroup.vercel.app/en/cookie-policy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://johngroup.vercel.app/de/cookie-richtlinie"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://johngroup.vercel.app/cookie"/>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://johngroup.vercel.app/en/cookie-policy</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://johngroup.vercel.app/cookie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://johngroup.vercel.app/en/cookie-policy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://johngroup.vercel.app/de/cookie-richtlinie"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://johngroup.vercel.app/cookie"/>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://johngroup.vercel.app/de/cookie-richtlinie</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://johngroup.vercel.app/cookie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://johngroup.vercel.app/en/cookie-policy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://johngroup.vercel.app/de/cookie-richtlinie"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://johngroup.vercel.app/cookie"/>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>

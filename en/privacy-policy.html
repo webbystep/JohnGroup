@@ -82,10 +82,16 @@
   .legal-page .rich-text a { color: #00ace8; text-decoration: underline; text-underline-offset: 3px; }
   .legal-page .rich-text strong { color: #1f3444; font-weight: 600; }
   @media (max-width: 991px) { .legal-page { padding-top: 60px; padding-bottom: 60px; } }
-  @media (max-width: 767px) { .legal-hero { padding: 140px 0 60px; 
+  @media (max-width: 767px) {
+    .legal-hero { padding: 140px 0 60px; }
+    .legal-hero h1 { font-size: 22px; }
+    .legal-page { padding-top: 40px; padding-bottom: 40px; }
+    .legal-page .privacy-wrap { padding: 30px; }
+    .legal-page .rich-text h5 { font-size: 22px; }
+    .legal-page .rich-text h6 { font-size: 18px; }
     .button-left .button-white { display: none !important; }
     .lang-switcher { margin-left: 0 !important; }
-  } /*jg-mobile-hide-cta*/ .legal-hero h1 { font-size: 30px; } .legal-page { padding-top: 40px; padding-bottom: 40px; } .legal-page .privacy-wrap { padding: 30px; } }
+  }
 
   .lang-switcher { position: relative; display: inline-flex; align-items: stretch; margin-left: 10px; font-family: inherit; }
   .lang-switcher-btn { display: inline-flex; align-items: center; gap: 8px; padding: 0 14px; height: 45px; background: rgba(255,255,255,0.06); color: #fff; border: 1px solid rgba(255,255,255,0.18); cursor: pointer; font-family: inherit; font-size: 14px; font-weight: 500; transition: background 0.2s, border-color 0.2s; }

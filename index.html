@@ -76,7 +76,7 @@
     left: 0;
     right: 0;
     width: 100%;
-    height: 500px;
+    height: 600px;
     background: transparent;
     --poster-color: transparent;
     --progress-bar-color: transparent;
@@ -86,9 +86,12 @@
     z-index: 2;
   }
   model-viewer.hero-image::part(default-progress-bar) { display: none !important; }
+  @media (min-width: 1280px) {
+    model-viewer.hero-image { height: 700px; }
+  }
   @media (min-width: 1920px) {
     .hero-image-wrap { height: 600px; max-height: 600px; }
-    model-viewer.hero-image { height: 720px; }
+    model-viewer.hero-image { height: 820px; }
   }
   * {
   -webkit-font-smoothing: antialiased;
@@ -246,7 +249,7 @@
               </div>
             </div>
           </div>
-          <div class="hero-image-wrap"><model-viewer id="hero-model" class="hero-image" src="hero.glb?v=2" alt="CNC megmunkált alkatrész — interaktív 3D modell" auto-rotate auto-rotate-delay="0" rotation-per-second="20deg" camera-controls touch-action="pan-y" disable-zoom interaction-prompt="none" shadow-intensity="1.4" shadow-softness="0.6" exposure="1.15" tone-mapping="aces" environment-image="legacy" camera-orbit="35deg 72deg 115%" min-camera-orbit="auto 40deg 115%" max-camera-orbit="auto 120deg 115%" loading="lazy" reveal="auto"></model-viewer><img src="images/vector-03.svg" loading="eager" alt="Vector" class="hero-decoration-one"></div>
+          <div class="hero-image-wrap"><model-viewer id="hero-model" class="hero-image" src="hero.glb?v=2" alt="CNC megmunkált alkatrész — interaktív 3D modell" auto-rotate auto-rotate-delay="0" rotation-per-second="20deg" camera-controls touch-action="pan-y" disable-zoom interaction-prompt="none" shadow-intensity="1.4" shadow-softness="0.6" exposure="1.15" tone-mapping="aces" environment-image="legacy" camera-orbit="35deg 72deg 105%" min-camera-orbit="auto 40deg 105%" max-camera-orbit="auto 120deg 105%" loading="lazy" reveal="auto"></model-viewer><img src="images/vector-03.svg" loading="eager" alt="Vector" class="hero-decoration-one"></div>
         </div>
       </div>
     </section>

@@ -60,9 +60,38 @@
   <link rel="icon" type="image/png" sizes="192x192" href="../images/icon-192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="../images/icon-512.png">
   <link rel="manifest" href="/manifest.webmanifest">
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
   <style>
   html, body { background-color: #162734; }
   .background-line { background-color: #f2f5fb; }
+  .service-item .service-image { display: none !important; }
+  .service-item .service-image-wrap { background-color: #BABFC2; height: 80px; }
+  @media (max-width: 991px) { .service-item .service-image-wrap { height: 70px; } }
+  .hero-image-section { overflow: visible !important; }
+  .hero-image-wrap { overflow: visible !important; position: relative; left: 0 !important; height: 400px; max-height: 400px; }
+  model-viewer.hero-image {
+    position: absolute !important;
+    bottom: -80px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 600px;
+    background: transparent;
+    --poster-color: transparent;
+    --progress-bar-color: transparent;
+    --progress-bar-height: 0px;
+    --progress-mask: transparent;
+    outline: none;
+    z-index: 2;
+  }
+  model-viewer.hero-image::part(default-progress-bar) { display: none !important; }
+  @media (min-width: 1280px) {
+    model-viewer.hero-image { height: 700px; bottom: -120px; }
+  }
+  @media (min-width: 1920px) {
+    .hero-image-wrap { height: 600px; max-height: 600px; }
+    model-viewer.hero-image { height: 820px; bottom: -140px; }
+  }
   * { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; -o-font-smoothing: antialiased; }
   .sliced-button { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 10px 100%, 0% calc(100% - 10px)); }
   .reference-bento { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 220px; gap: 16px; max-width: 100%; margin: 0 auto; padding: 0 15px; }
@@ -162,7 +191,7 @@
               </div>
             </div>
           </div>
-          <div class="hero-image-wrap"><img src="../images/23370-1.jpg" loading="eager" sizes="(max-width: 767px) 100vw, (max-width: 991px) 727.9921875px, 939.9921875px" srcset="../images/23370-1-p-500.jpg 500w, ../images/23370-1-p-800.jpg 800w, ../images/23370-1-p-1080.jpg 1080w, ../images/23370-1.jpg 1500w" alt="" class="hero-image"><img src="../images/vector-03.svg" loading="eager" alt="Vector" class="hero-decoration-one"></div>
+          <div class="hero-image-wrap"><model-viewer id="hero-model" class="hero-image" src="/hero.glb?v=2" alt="CNC-bearbeitetes Bauteil — interaktives 3D-Modell" auto-rotate auto-rotate-delay="0" rotation-per-second="20deg" camera-controls touch-action="pan-y" disable-zoom interaction-prompt="none" shadow-intensity="1.4" shadow-softness="0.6" exposure="1.15" tone-mapping="aces" environment-image="legacy" camera-orbit="35deg 72deg 105%" min-camera-orbit="auto 40deg 105%" max-camera-orbit="auto 120deg 105%" loading="lazy" reveal="auto"></model-viewer><img src="../images/vector-03.svg" loading="eager" alt="Vector" class="hero-decoration-one"></div>
         </div>
       </div>
     </section>
@@ -327,5 +356,6 @@
   <script src="/js/lang-switcher.js?v=2" defer></script>
   <script src="/js/sticky-cta.js?v=2" defer></script>
   <script src="/js/cookie-banner.js?v=2" defer></script>
+  <script src="/js/hero-model.js?v=1" defer></script>
 </body>
 </html>

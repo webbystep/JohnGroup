@@ -4,4 +4,4 @@ Allow: /
 # Disallow API endpoints from crawling
 Disallow: /api/
 
-Sitemap: https://johngroup.vercel.app/sitemap.xml
+Sitemap: https://johnslovakia.sk/sitemap.xml

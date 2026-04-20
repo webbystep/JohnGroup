@@ -58,6 +58,13 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'Missing request body' });
   }
 
+  // Honeypot — if a bot fills this hidden field, pretend success but don't send
+  const honeypot = (body.company_website || '').toString().trim();
+  if (honeypot) {
+    console.warn('Honeypot triggered, ignoring submission');
+    return res.status(200).json({ success: true });
+  }
+
   const name = (body.name || '').toString().trim();
   const email = (body.email || '').toString().trim();
   const phone = (body.phone || '').toString().trim();

@@ -6,7 +6,8 @@
     if (!form) return;
 
     var lang = (document.documentElement.lang || 'hu').toLowerCase().slice(0, 2);
-    var nameInput = form.querySelector('input[type="text"]');
+    var honeypot = form.querySelector('input[name="company_website"]');
+    var nameInput = form.querySelector('input[type="text"]:not([name="company_website"])');
     var emailInput = form.querySelector('input[type="email"]');
     var phoneInput = form.querySelector('input[type="tel"]');
     var messageInput = form.querySelector('textarea');
@@ -44,6 +45,7 @@
         message: messageInput.value.trim(),
         lang: lang,
         page: window.location.pathname,
+        company_website: honeypot ? honeypot.value : '',
       };
 
       fetch('/api/contact', {

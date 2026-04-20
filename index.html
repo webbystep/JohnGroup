@@ -72,7 +72,7 @@
   .hero-image-wrap { overflow: visible !important; position: relative; left: 0 !important; height: 400px; max-height: 400px; }
   model-viewer.hero-image {
     position: absolute !important;
-    bottom: 0;
+    bottom: -80px;
     left: 0;
     right: 0;
     width: 100%;
@@ -87,11 +87,11 @@
   }
   model-viewer.hero-image::part(default-progress-bar) { display: none !important; }
   @media (min-width: 1280px) {
-    model-viewer.hero-image { height: 700px; }
+    model-viewer.hero-image { height: 700px; bottom: -120px; }
   }
   @media (min-width: 1920px) {
     .hero-image-wrap { height: 600px; max-height: 600px; }
-    model-viewer.hero-image { height: 820px; }
+    model-viewer.hero-image { height: 820px; bottom: -140px; }
   }
   * {
   -webkit-font-smoothing: antialiased;

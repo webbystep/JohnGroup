@@ -68,18 +68,29 @@
   <style>
   html, body { background-color: #162734; }
   .background-line { background-color: #f2f5fb; }
+  .hero-image-section { overflow: visible !important; }
+  .hero-image-wrap { max-height: none !important; overflow: visible !important; position: relative; z-index: 3; left: 0 !important; }
   model-viewer.hero-image {
     width: 100%;
-    height: 400px;
-    max-height: 400px;
+    height: 500px;
+    max-height: none;
+    margin-top: -140px;
     background: transparent;
     --poster-color: transparent;
-    --progress-bar-color: #00ace8;
-    --progress-bar-height: 2px;
+    --progress-bar-color: transparent;
+    --progress-bar-height: 0px;
     --progress-mask: transparent;
     outline: none;
+    position: relative;
+    z-index: 3;
   }
-  @media (min-width: 992px) { model-viewer.hero-image { height: 500px; max-height: 600px; } }
+  model-viewer.hero-image::part(default-progress-bar) { display: none !important; }
+  @media (min-width: 992px) {
+    model-viewer.hero-image { height: 640px; margin-top: -180px; }
+  }
+  @media (min-width: 1280px) {
+    model-viewer.hero-image { height: 720px; margin-top: -220px; }
+  }
   * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -236,7 +247,7 @@
               </div>
             </div>
           </div>
-          <div class="hero-image-wrap"><model-viewer id="hero-model" class="hero-image" src="hero.glb?v=2" alt="CNC megmunkált alkatrész — interaktív 3D modell" auto-rotate auto-rotate-delay="0" rotation-per-second="20deg" camera-controls touch-action="pan-y" disable-zoom interaction-prompt="none" shadow-intensity="0.7" shadow-softness="0.9" exposure="1.4" environment-image="neutral" camera-orbit="35deg 70deg auto" min-camera-orbit="auto 40deg auto" max-camera-orbit="auto 120deg auto" loading="lazy" reveal="auto"></model-viewer><img src="images/vector-03.svg" loading="eager" alt="Vector" class="hero-decoration-one"></div>
+          <div class="hero-image-wrap"><model-viewer id="hero-model" class="hero-image" src="hero.glb?v=2" alt="CNC megmunkált alkatrész — interaktív 3D modell" auto-rotate auto-rotate-delay="0" rotation-per-second="20deg" camera-controls touch-action="pan-y" disable-zoom interaction-prompt="none" shadow-intensity="0.7" shadow-softness="0.9" exposure="1.4" environment-image="neutral" camera-orbit="35deg 70deg 115%" min-camera-orbit="auto 40deg 115%" max-camera-orbit="auto 120deg 115%" loading="lazy" reveal="auto"></model-viewer><img src="images/vector-03.svg" loading="eager" alt="Vector" class="hero-decoration-one"></div>
         </div>
       </div>
     </section>

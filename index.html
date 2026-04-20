@@ -68,34 +68,21 @@
   <style>
   html, body { background-color: #162734; }
   .background-line { background-color: #f2f5fb; }
-  .hero-image-section { overflow: visible !important; margin-top: -140px !important; position: relative; }
-  .hero-image-wrap { max-height: none !important; overflow: visible !important; position: relative; z-index: 3; left: 0 !important; }
-  .hero-list-wrapper { position: relative; z-index: 10; justify-content: flex-end !important; padding-bottom: 30px; }
-  .hero-cross-shape { z-index: 1; top: 60px !important; }
+  .hero-image-wrap { overflow: visible !important; }
   model-viewer.hero-image {
     width: 100%;
-    height: 500px;
-    max-height: none;
+    height: 400px;
+    max-height: 400px;
     background: transparent;
     --poster-color: transparent;
     --progress-bar-color: transparent;
     --progress-bar-height: 0px;
     --progress-mask: transparent;
     outline: none;
-    position: relative;
-    z-index: 3;
   }
   model-viewer.hero-image::part(default-progress-bar) { display: none !important; }
-  @media (min-width: 992px) {
-    .hero-image-section { margin-top: -180px !important; }
-    model-viewer.hero-image { height: 640px; }
-    .hero-cross-shape { top: 100px !important; }
-  }
-  @media (min-width: 1280px) {
-    .hero-image-section { margin-top: -220px !important; }
-    model-viewer.hero-image { height: 720px; }
-    .hero-cross-shape { top: 140px !important; }
-  }
+  @media (min-width: 992px) { model-viewer.hero-image { height: 500px; max-height: 500px; } }
+  @media (min-width: 1280px) { model-viewer.hero-image { height: 600px; max-height: 600px; } }
   * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -7,8 +7,9 @@
     <xhtml:link rel="alternate" hreflang="hu" href="https://johnslovakia.sk/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://johnslovakia.sk/en/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://johnslovakia.sk/de/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://johnslovakia.sk/sk/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://johnslovakia.sk/"/>
-    <lastmod>2026-04-16</lastmod>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -18,8 +19,9 @@
     <xhtml:link rel="alternate" hreflang="hu" href="https://johnslovakia.sk/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://johnslovakia.sk/en/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://johnslovakia.sk/de/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://johnslovakia.sk/sk/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://johnslovakia.sk/"/>
-    <lastmod>2026-04-16</lastmod>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -29,8 +31,21 @@
     <xhtml:link rel="alternate" hreflang="hu" href="https://johnslovakia.sk/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://johnslovakia.sk/en/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://johnslovakia.sk/de/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://johnslovakia.sk/sk/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://johnslovakia.sk/"/>
-    <lastmod>2026-04-16</lastmod>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://johnslovakia.sk/sk/</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://johnslovakia.sk/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://johnslovakia.sk/en/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://johnslovakia.sk/de/"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://johnslovakia.sk/sk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://johnslovakia.sk/"/>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -40,8 +55,9 @@
     <xhtml:link rel="alternate" hreflang="hu" href="https://johnslovakia.sk/impresszum"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://johnslovakia.sk/en/imprint"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://johnslovakia.sk/de/impressum"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://johnslovakia.sk/sk/impressum"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://johnslovakia.sk/impresszum"/>
-    <lastmod>2026-04-16</lastmod>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -51,8 +67,9 @@
     <xhtml:link rel="alternate" hreflang="hu" href="https://johnslovakia.sk/impresszum"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://johnslovakia.sk/en/imprint"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://johnslovakia.sk/de/impressum"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://johnslovakia.sk/sk/impressum"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://johnslovakia.sk/impresszum"/>
-    <lastmod>2026-04-16</lastmod>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -62,8 +79,21 @@
     <xhtml:link rel="alternate" hreflang="hu" href="https://johnslovakia.sk/impresszum"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://johnslovakia.sk/en/imprint"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://johnslovakia.sk/de/impressum"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://johnslovakia.sk/sk/impressum"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://johnslovakia.sk/impresszum"/>
-    <lastmod>2026-04-16</lastmod>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://johnslovakia.sk/sk/impressum</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://johnslovakia.sk/impresszum"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://johnslovakia.sk/en/imprint"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://johnslovakia.sk/de/impressum"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://johnslovakia.sk/sk/impressum"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://johnslovakia.sk/impresszum"/>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -73,8 +103,9 @@
     <xhtml:link rel="alternate" hreflang="hu" href="https://johnslovakia.sk/privacy-policy"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://johnslovakia.sk/en/privacy-policy"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://johnslovakia.sk/de/datenschutz"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://johnslovakia.sk/sk/ochrana-osobnych-udajov"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://johnslovakia.sk/privacy-policy"/>
-    <lastmod>2026-04-16</lastmod>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -84,8 +115,9 @@
     <xhtml:link rel="alternate" hreflang="hu" href="https://johnslovakia.sk/privacy-policy"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://johnslovakia.sk/en/privacy-policy"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://johnslovakia.sk/de/datenschutz"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://johnslovakia.sk/sk/ochrana-osobnych-udajov"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://johnslovakia.sk/privacy-policy"/>
-    <lastmod>2026-04-16</lastmod>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -95,8 +127,21 @@
     <xhtml:link rel="alternate" hreflang="hu" href="https://johnslovakia.sk/privacy-policy"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://johnslovakia.sk/en/privacy-policy"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://johnslovakia.sk/de/datenschutz"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://johnslovakia.sk/sk/ochrana-osobnych-udajov"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://johnslovakia.sk/privacy-policy"/>
-    <lastmod>2026-04-16</lastmod>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://johnslovakia.sk/sk/ochrana-osobnych-udajov</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://johnslovakia.sk/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://johnslovakia.sk/en/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://johnslovakia.sk/de/datenschutz"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://johnslovakia.sk/sk/ochrana-osobnych-udajov"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://johnslovakia.sk/privacy-policy"/>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -106,8 +151,9 @@
     <xhtml:link rel="alternate" hreflang="hu" href="https://johnslovakia.sk/cookie"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://johnslovakia.sk/en/cookie-policy"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://johnslovakia.sk/de/cookie-richtlinie"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://johnslovakia.sk/sk/zasady-cookies"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://johnslovakia.sk/cookie"/>
-    <lastmod>2026-04-16</lastmod>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -117,8 +163,9 @@
     <xhtml:link rel="alternate" hreflang="hu" href="https://johnslovakia.sk/cookie"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://johnslovakia.sk/en/cookie-policy"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://johnslovakia.sk/de/cookie-richtlinie"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://johnslovakia.sk/sk/zasady-cookies"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://johnslovakia.sk/cookie"/>
-    <lastmod>2026-04-16</lastmod>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -128,8 +175,21 @@
     <xhtml:link rel="alternate" hreflang="hu" href="https://johnslovakia.sk/cookie"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://johnslovakia.sk/en/cookie-policy"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://johnslovakia.sk/de/cookie-richtlinie"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://johnslovakia.sk/sk/zasady-cookies"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://johnslovakia.sk/cookie"/>
-    <lastmod>2026-04-16</lastmod>
+    <lastmod>2026-04-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://johnslovakia.sk/sk/zasady-cookies</loc>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://johnslovakia.sk/cookie"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://johnslovakia.sk/en/cookie-policy"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://johnslovakia.sk/de/cookie-richtlinie"/>
+    <xhtml:link rel="alternate" hreflang="sk" href="https://johnslovakia.sk/sk/zasady-cookies"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://johnslovakia.sk/cookie"/>
+    <lastmod>2026-04-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

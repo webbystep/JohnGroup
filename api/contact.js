@@ -19,12 +19,14 @@ const SUBJECTS = {
   hu: function (name) { return 'Új ajánlatkérés – ' + name; },
   en: function (name) { return 'New quote request – ' + name; },
   de: function (name) { return 'Neue Angebotsanfrage – ' + name; },
+  sk: function (name) { return 'Nová žiadosť o ponuku – ' + name; },
 };
 
 const LABELS = {
   hu: { name: 'Név', email: 'E-mail', phone: 'Telefon', message: 'Üzenet', lang: 'Nyelv', page: 'Oldal', heading: 'Új ajánlatkérés' },
   en: { name: 'Name', email: 'Email', phone: 'Phone', message: 'Message', lang: 'Language', page: 'Page', heading: 'New quote request' },
   de: { name: 'Name', email: 'E-Mail', phone: 'Telefon', message: 'Nachricht', lang: 'Sprache', page: 'Seite', heading: 'Neue Angebotsanfrage' },
+  sk: { name: 'Meno', email: 'E-mail', phone: 'Telefón', message: 'Správa', lang: 'Jazyk', page: 'Stránka', heading: 'Nová žiadosť o ponuku' },
 };
 
 export default async function handler(req, res) {

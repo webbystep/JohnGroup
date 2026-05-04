@@ -190,6 +190,14 @@
     .about-content h3.about-subtitle { font-size: 18px; margin: 24px 0 10px; }
     .about-content ul.about-list { padding-left: 20px; }
   }
+  .grid-about { align-items: start; }
+  .about-image-wrap { max-height: 600px; }
+  .about-content ul.about-list-2col { columns: 2; column-gap: 28px; }
+  .about-content ul.about-list-2col li { break-inside: avoid; }
+  @media (max-width: 600px) {
+    .about-content ul.about-list-2col { columns: 1; }
+  }
+/*jg-about-layout-v1*/
 /*jg-about-extended-v1*/
 </style>
 </head>
@@ -264,7 +272,7 @@
                     <li>from one-off pieces to medium and large series.</li>
                   </ul>
                   <h3 class="about-subtitle">An end-to-end solution from a single source:</h3>
-                  <ul class="about-list">
+                  <ul class="about-list about-list-2col">
                     <li>milling, turning,</li>
                     <li>welded structures,</li>
                     <li>prototyping,</li>

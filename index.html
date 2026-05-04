@@ -214,6 +214,14 @@
     .about-content h3.about-subtitle { font-size: 18px; margin: 24px 0 10px; }
     .about-content ul.about-list { padding-left: 20px; }
   }
+  .grid-about { align-items: start; }
+  .about-image-wrap { max-height: 600px; }
+  .about-content ul.about-list-2col { columns: 2; column-gap: 28px; }
+  .about-content ul.about-list-2col li { break-inside: avoid; }
+  @media (max-width: 600px) {
+    .about-content ul.about-list-2col { columns: 1; }
+  }
+/*jg-about-layout-v1*/
 /*jg-about-extended-v1*/
 </style>
 </head>
@@ -288,7 +296,7 @@
                     <li>egyedi daraboktól a közepes és nagy szériákig vállalunk gyártást.</li>
                   </ul>
                   <h3 class="about-subtitle">Teljes körű megoldás egy kézből:</h3>
-                  <ul class="about-list">
+                  <ul class="about-list about-list-2col">
                     <li>marás, esztergálás,</li>
                     <li>hegesztett szerkezetek,</li>
                     <li>prototípusgyártás,</li>

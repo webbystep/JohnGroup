@@ -67,7 +67,11 @@
   html, body { background-color: #162734; }
   .background-line { background-color: #f2f5fb; }
   .service-item .service-image-wrap { display: none !important; }
-  .grid-hero-image { grid-template-columns: 1fr !important; }
+  .hero-image-section { height: 130px; }
+  @media (min-width: 1920px) {
+    .hero-image-section { margin-top: -50px; }
+    .hero-cross-shape { width: 80%; height: 200px; top: -80px; left: -30px; }
+  }
   * { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; -o-font-smoothing: antialiased; }
   .sliced-button { clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 10px 100%, 0% calc(100% - 10px)); }
   .reference-bento { display: grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 220px; gap: 16px; max-width: 100%; margin: 0 auto; padding: 0 15px; }
@@ -174,24 +178,6 @@
     <section class="hero-image-section">
       <div class="w-layout-blockcontainer container-full fullwidth w-container">
         <div class="hero-cross-shape"></div>
-        <div class="w-layout-grid grid-hero-image">
-          <div id="w-node-_607726a4-1da8-5bc3-4b3a-3da2eb9bf5a6-43639725" data-w-id="607726a4-1da8-5bc3-4b3a-3da2eb9bf5a6" style="opacity:0" class="hero-list-wrapper mobile_hidden">
-            <div class="div-block">
-              <h2 class="no-margin heading-h5">Was wir garantieren</h2>
-              <div class="hero-list">
-                <div class="hero-list-item"><img src="../images/chevron-right.svg" loading="eager" alt="Pfeil-Icon" class="hero-list-icon">
-                  <div>Präzision und Qualität</div>
-                </div>
-                <div class="hero-list-item"><img src="../images/chevron-right.svg" loading="eager" alt="Pfeil-Icon" class="hero-list-icon">
-                  <div>Schnelle Reaktion und Flexibilität</div>
-                </div>
-                <div class="hero-list-item"><img src="../images/chevron-right.svg" loading="eager" alt="Pfeil-Icon" class="hero-list-icon">
-                  <div>Pünktliche Termine</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
     <section class="about-section section-spacing-top">
